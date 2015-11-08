@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" context="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{ meta_descript }}" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "normalize.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "theme.css"}}" />
+
+    {{ ghost_head }}
+  </head>
+  <body>
+    <div id="main">
+      <header class="site-header">
+        <a class="logo" title="{{@blog.title}}" href="{{@blog.url}}">
+          <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+        </a>
+        {{navigation}}
+      </header>
+      <section>
+        {{{body}}}
+      </section>
+      <footer>
+        <p>© 2015 Ayahuasaca Publishing</p>
+        <p>Published with <a href="http://ghost.org">Ghost</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
