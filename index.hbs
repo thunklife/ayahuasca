@@ -1,7 +1,12 @@
 {{!< default}}
 
-<div class="content">
+<section class="content">
   {{#foreach posts}}
     {{> post-single}}
   {{/foreach}}
-</div>
+</section>
+<aside class="side-bar">
+  {{#foreach posts}}
+    {{>post-archive}}
+  {{/foreach}}
+</aside>
